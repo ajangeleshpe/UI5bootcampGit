@@ -1,8 +1,9 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"sap/ui/bootcampWebapp/model/models"
-], function(UIComponent, Device, models) {
+	"sap/ui/bootcampWebapp/model/models",
+	"sap/ui/bootcampWebapp/controller/LoginDialog"
+], function(UIComponent, Device, models, LoginDialog) {
 	"use strict";
 
 	return UIComponent.extend("sap.ui.bootcampWebapp.Component", {
@@ -22,6 +23,8 @@ sap.ui.define([
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
+			
+			this.loginDialog = new LoginDialog();
 		}
 	});
 });

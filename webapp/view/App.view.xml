@@ -8,13 +8,27 @@
 <!--		</pages>-->
 <!--	</App>-->
 <!--</mvc:View>-->
-<mvc:View 
-	controllerName="sap.ui.bootcampWebapp.controller.App"
-	xmlns="sap.m" 
-	xmlns:mvc="sap.ui.core.mvc">
-	<Text text="Username"/>
-	<Input id="username" type="Text" value="{/field/username}" valueLiveUpdate="true" description="Hello {/field/username}"/>
-	<Text text="Password"/>
-	<Input id="password" type="Password"/>
-	<Button id="login" text="{i18n>loginButtonText}" press="onLoginPress"/>
+<mvc:View controllerName="sap.ui.bootcampWebapp.controller.App" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc">
+	<App class="sapui5BootcampWT">
+		<pages>
+			<Page title="{i18n>homePageTitle}">
+				<headerContent>
+					<Button icon="sap-icon://hello-world" press="onOpenDialog"/>
+				</headerContent>
+				<content>
+					<mvc:XMLView viewName="sap.ui.bootcampWebapp.view.LoginPanel"/>
+					<mvc:XMLView viewName="sap.ui.bootcampWebapp.view.InvoiceList"/>
+					<!--<Panel headerText=" {i18n>loginPanelTitle}" expandable="true" class="sapUiResponsiveContentPadding" width="auto">-->
+					<!--	<content>-->
+					<!--		<Text text="Username" class="sapThemeHighlight-asColor myCustomText"/>-->
+					<!--		<Input id="username" type="Text" value="{/field/username}"/>-->
+					<!--		<Text text="Password"/>-->
+					<!--		<Input id="password" type="Password"/>-->
+					<!--		<Button id="login" text="{i18n>loginButtonText}" press="onLoginPress" class="sapUiLargeMarginTop myCustomButton" />-->
+					<!--	</content>-->
+					<!--</Panel>-->
+				</content>
+			</Page>
+		</pages>
+	</App>
 </mvc:View>

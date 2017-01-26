@@ -20,6 +20,11 @@
 
 		<script>
 			sap.ui.getCore().attachInit(function() {
+				// new sap.ui.core.ComponentContainer({
+				// 	height : "100%",
+				// 	name : "sap.ui.bootcampWebapp"
+				// }).placeAt("content");
+				
 				// new sap.m.Text({
 				// 	text : "Username" 
 				// }).placeAt("content");
@@ -41,16 +46,16 @@
 				// 	text : "Login"
 				// }).placeAt("content");
 				
-				sap.ui.xmlview({
-					viewName : "sap.ui.bootcampWebapp.view.App"	
-				}).placeAt("content");
-				
-				// new sap.m.Shell({
-				// 	app: new sap.ui.core.ComponentContainer({
-				// 		height : "100%",
-				// 		name : "sap.ui.bootcampWebapp"
-				// 	})
+				// sap.ui.xmlview({
+				// 	viewName : "sap.ui.bootcampWebapp.view.App"	
 				// }).placeAt("content");
+			
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "sap.ui.bootcampWebapp"
+					})
+				}).placeAt("content");
 			});
 		</script>
 	</head>

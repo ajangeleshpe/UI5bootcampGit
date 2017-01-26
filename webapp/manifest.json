@@ -39,7 +39,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "sap.ui.bootcampWebapp.view.View1",
+			"viewName": "sap.ui.bootcampWebapp.view.App",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -65,6 +65,10 @@
 				"settings": {
 					"bundleName": "sap.ui.bootcampWebapp.i18n.i18n"
 				}
+			},
+			"invoice": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "Invoices.json"
 			}
 		},
 		"resources": {
