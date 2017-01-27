@@ -1,13 +1,13 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sap.ui.bootcampWebapp.controller.LoginPanel"
 	xmlns:html="http://www.w3.org/1999/xhtml">
-	<Panel headerText="{i18n>loginPanelTitle}" expandable="true" class="sapUiResponsiveContentPadding" width="auto">
+	<Panel headerText="{i18n>loginPanelTitle}" expandable="{device>/system/desktop}" class="sapUiResponsiveContentPadding" width="auto" expanded="{= !${device>/system/phone} }" >
 		<content>
 			<Text text="Username" class="sapThemeHighlight-asColor myCustomText"/>
 			<Input id="username" type="Text" value="{/field/username}"/>
 			<Text text="Password"/>
 			<Input id="password" type="Password"/>
 			<Button id="login" text="{i18n>loginButtonText}" press="onLoginPress" class="sapUiLargeMarginTop myCustomButton" icon="sap-icon://world"/>
-			<Button id="openDialog" text="{i18n>openDialogButtonText}" press="onOpenDialog" class="sapUiLargeMarginTop sapUiSmallMarginBegin"/>
+			<Button id="openDialog" text="{i18n>openDialogButtonText}" press="onOpenDialog" class="sapUiLargeMarginTop sapUiSmallMarginBegin sapUiVisibleOnlyOnDesktop"/>
 		</content>
 	</Panel>
 </mvc:View>

@@ -17,7 +17,7 @@
     {
       "templateId": "ui5template.basicSAPUI5ApplicationComponent",
       "templateVersion": "1.4.0",
-      "dateTimeStamp": "Wed, 25 Jan 2017 09:12:34 GMT"
+      "dateTimeStamp": "Fri, 27 Jan 2017 11:54:35 GMT"
     }
   ],
   "translation": {
@@ -38,5 +38,8 @@
     "notifyBeforePushLevel": "Error",
     "blockPush": false,
     "blockPushLevel": "Error"
+  },
+  "mockpreview": {
+    "loadJSONFiles": true
   }
 }

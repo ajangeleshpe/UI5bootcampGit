@@ -9,7 +9,7 @@ sap.ui.define([
 
 	return Controller.extend("sap.ui.bootcampWebapp.controller.InvoiceList", {
 		formatter: formatter,
-		
+
 		onInit: function() {
 			// Add code here
 			var oViewModel = new JSONModel({
@@ -18,8 +18,8 @@ sap.ui.define([
 
 			this.getView().setModel(oViewModel, "view");
 		},
-		
-		onFilterInvoices : function (oEvent) {
+
+		onFilterInvoices: function(oEvent) {
 
 			// build filter array
 			var aFilter = [];
@@ -32,6 +32,14 @@ sap.ui.define([
 			var oList = this.getView().byId("invoiceList");
 			var oBinding = oList.getBinding("items");
 			oBinding.filter(aFilter);
+		},
+
+		onPress: function(oEvent) {
+			var oItem = oEvent.getSource();
+			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			oRouter.navTo("detail", {
+				invoicePath: oItem.getBindingContext("invoice").getPath().substr(1)
+			});
 		}
 
 	});

@@ -12,10 +12,29 @@
       "hashParameter": "",
       "backendSystem": [],
       "_metadata": {
-        "runnerId": "webapprunner",
         "id": 6714349,
+        "runnerId": "webapprunner",
         "displayName": "Run index.html",
-        "lastRunTimeStamp": 1485435060876
+        "lastRunTimeStamp": 1485523946212
+      }
+    },
+    {
+      "filePath": "/webapp/test/mockServer.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": null,
+      "ui5VerSource": null,
+      "isDefaultVersion": 0,
+      "urlParameters": [],
+      "hashParameter": "",
+      "backendSystem": [],
+      "urlParametersNotNeeded": false,
+      "_metadata": {
+        "id": 2497979,
+        "runnerId": "webapprunner",
+        "displayName": "Run with Mock Data",
+        "lastRunTimeStamp": 1485517418774
       }
     }
   ]

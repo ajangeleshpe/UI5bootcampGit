@@ -12,6 +12,15 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"dataSources": {
+			"invoiceRemote": {
+				"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
 		}
 	},
 
@@ -67,14 +76,39 @@
 				}
 			},
 			"invoice": {
-				"type": "sap.ui.model.json.JSONModel",
-				"uri": "Invoices.json"
+				"dataSource": "invoiceRemote"
 			}
 		},
 		"resources": {
 			"css": [{
 				"uri": "css/style.css"
 			}]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "sap.ui.bootcampWebapp.view",
+				"controlId": "app",
+				"controlAggregation": "pages"
+			},
+			"routes": [{
+				"pattern": "",
+				"name": "overview",
+				"target": "overview"
+			}, {
+				"pattern": "detail/{invoicePath}",
+				"name": "detail",
+				"target": "detail"
+			}],
+			"targets": {
+				"overview": {
+					"viewName": "Overview"
+				},
+				"detail": {
+					"viewName": "Detail"
+				}
+			}
 		}
 	}
 }

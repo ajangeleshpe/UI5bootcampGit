@@ -1,0 +1,55 @@
+[{
+	"ProductName": "Pineapple",
+	"Quantity": 21,
+	"ExtendedPrice": 87.2,
+	"ShipperName": "Fun Inc.",
+	"ShippedDate": "2015-04-01T00:00:00",
+	"Status": "A"
+}, {
+	"ProductName": "Milk",
+	"Quantity": 4,
+	"ExtendedPrice": 9.99999,
+	"ShipperName": "ACME",
+	"ShippedDate": "2015-02-18T00:00:00",
+	"Status": "B"
+}, {
+	"ProductName": "Canned Beans",
+	"Quantity": 3,
+	"ExtendedPrice": 6.85,
+	"ShipperName": "ACME",
+	"ShippedDate": "2015-03-02T00:00:00",
+	"Status": "B"
+}, {
+	"ProductName": "Salad",
+	"Quantity": 2,
+	"ExtendedPrice": 8.8,
+	"ShipperName": "ACME",
+	"ShippedDate": "2015-04-12T00:00:00",
+	"Status": "C"
+}, {
+	"ProductName": "Bread",
+	"Quantity": 1,
+	"ExtendedPrice": 2.71212,
+	"ShipperName": "Fun Inc.",
+	"ShippedDate": "2015-01-27T00:00:00",
+	"Status": "A"
+}, {
+	"ShipperName": "John Inc",
+	"ProductName": "Soda",
+	"Quantity": 24,
+	"ExtendedPrice": 599.99
+}, {
+	"ShipperName": "Ysa Inc",
+	"ProductName": "Chicken",
+	"Quantity": 5611,
+	"ExtendedPrice": 1708.92,
+	"__metadata": {
+		"uri": "Invoices(ProductName='ProductName%201',Quantity=5611,ShipperName='ShipperName%201')",
+		"type": "NorthwindModel.Invoice"
+	}
+}, {
+	"ShipperName": "Kenzi Inc",
+	"ProductName": "Pork",
+	"Quantity": 143,
+	"ExtendedPrice": 101.2
+}]
